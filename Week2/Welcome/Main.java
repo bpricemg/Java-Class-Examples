@@ -1,8 +1,6 @@
-// This program displays three different statements
+// This program prints Welcome to Java!
 class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello!");
-        System.out.println("This is Intro to Java I");
-        System.out.println("I enjoy the snow!");
+    public static void main (String[] args) {
+        System.out.println("Welcome to Intro to Java I at Mount Greylock!");
     }
 }
