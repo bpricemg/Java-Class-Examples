@@ -25,7 +25,7 @@ class AdditionQuiz {
         // Else, if they are incorrect, print "Sorry, you are not correct. 
         // The correct answer is..."
         else {
-            System.out.println("Sorry, you are not correct. The correct answer is " + (random1                                 + random2) + ".");
+            System.out.println("Sorry, you are not correct. The correct answer is " + (random1 + random2) + ".");
         }
     }
 }
