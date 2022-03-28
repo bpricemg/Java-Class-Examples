@@ -34,6 +34,7 @@ class Initial {
         }
 
         // Lets make the first initial a capital letter
+        // This still works even if the user typed in an upper case letter to begin with
         first_initial = Character.toUpperCase(first_initial);
 
         // Print the result
