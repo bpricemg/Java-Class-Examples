@@ -1,5 +1,5 @@
 /**
- * Displays the sumer from 0 to 999999999
+ * Displays the sum from 0 to 999999999
  */
 
 class add {
