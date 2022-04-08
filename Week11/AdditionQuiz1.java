@@ -1,17 +1,20 @@
 /**
  * Addition quiz for an elementary student
+ * This time we will will protect the program from crashing if the user provides
+ * something other than an integer
  */
 
 import java.util.Scanner;
 
-class AdditionQuiz {
+class AdditionQuiz1 {
     public static void main(String[] args) {
         // Create two random integers between 0 and 9 (inclusive)
         int random1 = (int) (Math.random() * 10);
         int random2 = (int) (Math.random() * 10);
 
         // Declare vairbale outside of do-while loop for proper scope
-        int answer;
+        // Note* the answer can never be -1
+        int answer = -1;
 
         // Start a scanner
         Scanner input = new Scanner(System.in);
@@ -21,7 +24,11 @@ class AdditionQuiz {
             System.out.print("What is " + random1 + " plus " + random2 + "? ");
 
             // Get the user's input with a Scanner
-            answer = input.nextInt();
+            try {
+                answer = input.nextInt();
+            } catch (Exception e) {
+                input.next();
+            }            
 
             // If the user gets the incorrect answer, let them know
             if (answer != random1 + random2) {
