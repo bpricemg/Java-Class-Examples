@@ -1,4 +1,5 @@
 // Test out different for loops
+import java.util.concurrent.TimeUnit;
 
 class ForLoops {
     public static void main(String[] args) {
@@ -15,5 +16,22 @@ class ForLoops {
         for (int i = 0; i <= 20; i += 2) {
             System.out.println(i);
         }
+
+        System.out.println();
+
+        // For loop that counts down
+        // Note* i-- subtracts one from the current value of i
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+            
+            // Sleep for one second
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Launch!");
+        
     }
 }

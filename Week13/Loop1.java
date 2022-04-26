@@ -1,0 +1,21 @@
+// Print the number of hashes determined by a user
+
+import java.util.Scanner;
+
+class Loop1 {
+    public static void main(String[] args) {
+        // Get the number of hashes from the user
+        Scanner input = new Scanner(System.in);
+        int n;
+        do {
+            System.out.print("Positive integer: ");
+            n = input.nextInt();
+        } while (n <= 0);
+
+        // Print out n hashes
+        for(int i = 0; i < n; i++){
+            System.out.print("#");
+        }
+        System.out.println();
+    }
+}
