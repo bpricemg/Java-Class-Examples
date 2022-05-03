@@ -7,19 +7,13 @@ class Add {
         int first = 10;
         int second = 5;
 
-        // Method call
-        int sum = addTwoInts(first, second);
-
-        System.out.println("The sum is " + sum);
+        System.out.println("The sum is " + addTwoInts(first, second));
     }
 
     /**
      * addTwoInts will take in two integers as a paramenter and return an integer back
      */
     public static int addTwoInts(int i, int j) {
-        int result = i + j;
-
-        // Results that we return back to the main method
-        return result;
+        return i + j;
     }
 }
