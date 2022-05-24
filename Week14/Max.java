@@ -1,4 +1,4 @@
-class Max {
+sclass Max {
     public static void main(String[] args) {
         double i = 5.8;
         double j = 10;
