@@ -20,4 +20,9 @@ class Circle {
     double getRadius() {
         return radius;
     }
+
+    /** Update the radius */
+    void updateRadius(double newRadius) {
+        radius = newRadius;
+    }
 }
